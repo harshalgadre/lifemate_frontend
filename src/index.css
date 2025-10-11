@@ -9,4 +9,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
 
+  font-family: 'Satoshi', sans-serif;
+}
+
+.noise{
+  background-image: url('/src/assets/noise.svg');
+  background-size: cover;
+  opacity: 1;
+}
+.text2{
+  font-family: 'Clash Display', sans-serif;
+}
