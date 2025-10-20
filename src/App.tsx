@@ -3,18 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Landing from "./components/Landing";
+import JobPosting from "./components/JobPosting";
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* Default landing page */}
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Landing />} /> */}
 
         {/* Other pages */}
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/jobs" element={<JobPosting />} />
 
         {/* Optional 404 route */}
         <Route
